@@ -11,10 +11,11 @@
 #include <math.h>
 
 /**
- * struct printf_types - struct formats.
+ * struct print_format - struct formats
+ * @placeholder: format
+ * @f: function associated
  *
- * @ftype: format.
- * @f: function associated.
+ * Description: Define a new type struct print_f
  */
 typedef struct print_format
 {
