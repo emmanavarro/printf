@@ -12,12 +12,19 @@ This project is about creating a simulation of the original printf function. The
 * No more than 5 functions per file
 * The prototypes of all your functions should be included in your header file called holberton.h
 
-##### Synopsis:
+## Synopsis:
 ```bash
 int _printf(const char *format, ...);
 ```
 * *format* is a character string. The format string is composed of zero or more directives and conversion specifiers:
-* %c, %s, %d, %i, %%, (custom specifiers can be added).
+
+Specifier | Input example | Output example
+| --- | --- | --- |
+%c | "Printing a char: [%c]\n", 'X' | Printing a char: [X]
+%s | "Printing a string: [%s]\n", "Hello, World" | Printing a string: [Hello, World]
+%d or %i | "Printing a number: [%i]\n", 386 | Printing a number: [386]
+%% | "Printing a percent sign: [%%]\n", % | Printing a percent sign: [%]
+*Note*: custom specifiers can be added as needed.
 
 * (...) the ellipsis sign represents the variable number of input arguments.
 
@@ -26,9 +33,15 @@ All the code files must be compiled as shown:
 ```bash
 gcc -Wall -Werror -Wextra -pedantic *.c
 ```
+After compilation the executable file should be run ```./example.out```.
+
+## Downloading the repository
+The repository should be cloned as shown:
+```bash
+git clone https://github.com/emmanavarro/printf.git
+```
 
 ## Resources
-
  - [Secrets of printf](https://www.cypress.com/file/54761/download)
 
 ## Authors
