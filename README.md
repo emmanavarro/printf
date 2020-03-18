@@ -1,8 +1,10 @@
+[![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
 # _printf Function
 ## Creating our own C printf function
 This project is about creating a simulation of the original printf function. The printf function is used for printing the output. It returns the number of characters that are printed. If there is some error then it returns a negative value.
 
-## Requirements
+## :heavy_check_mark: Requirements 
 
 * Allowed editors: vi, vim, emacs
 * All your files will be compiled on Ubuntu 14.04 LTS
@@ -12,7 +14,7 @@ This project is about creating a simulation of the original printf function. The
 * No more than 5 functions per file
 * The prototypes of all your functions should be included in your header file called holberton.h
 
-## Synopsis:
+## :bookmark_tabs: Synopsis:
 ```bash
 int _printf(const char *format, ...);
 ```
@@ -29,29 +31,31 @@ Specifier | Input example | Output example
 
 * (...) the ellipsis sign represents the variable number of input arguments.
 
-## Compilation
+## :gear: Compilation
 All the code files must be compiled as shown:
 ```bash
 gcc -Wall -Werror -Wextra -pedantic *.c
 ```
 After compilation the executable file should be run ```./example.out```.
 
-## Downloading the repository
+## :computer: Downloading the repository
 The repository should be cloned as shown:
 ```bash
 git clone https://github.com/emmanavarro/printf.git
 ```
 
-## Resources
+## :link: Resources
  - [Secrets of printf](https://www.cypress.com/file/54761/download)
 
-## Authors
+## :dancing_women: Authors
 * Nathaly Sotomayor Ampudia | [Github](https://github.com/nathsotomayor)
 * Emma Navarro Millán | [Github](https://github.com/emmanavarro)
 
-## License
+## Made with :heart: in
 <img src="https://www.holbertonschool.com/holberton-logo.png"
      alt="Flow chart"
      style="float: left; margin-right: 10px;">
 
-Project for: [Holberton School](https://www.holbertonschool.com/)
+__Holberton School - Foundations - Low-level programming & Algorithm__
+
+__March, 2020.__
