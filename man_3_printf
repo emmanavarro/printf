@@ -7,11 +7,19 @@
 
 int printf(const char *format, ...);
 .SH DESCRIPTION
-Function that produces output according to a format. According to format, execute:
+Function that produces output according to a format. The functions _printf and write output to stdout, the standard output stream.
+
+These eight functions write the output under the control of a format string that specifies how subsequent arguments (or arguments accessed via the variable-length argument facilities of stdarg(3)) are converted for output.
 .SH RETURN VALUE
 Upon successful return, these functions return the number of characters printed (excluding the null byte used to end output to strings).
 
 If an error occurs, return a negative value (-1).
+
+.B Format of the format string
+
+The format string is a character string, beginning and ending in its initial shift state, if any. The format string is composed of zero or more directives: ordinary characters (not %), which are copied unchanged to the output stream; and conversion specifications, each of which results in fetching zero or more subsequent arguments. Each conversion specification is introduced by the character %, and ends with a conversion specifier.
+
+The arguments must correspond properly (after type promotion) with the conversion specifier. Each conversion specifier asks for the next argument (and it is an error if insufficiently many arguments are given).
 .SH CONVERSION SPECIFIER
 A character that specifies the type of conversion to be applied. The conversion specifiers and their meanings are:
 .IP d,i
@@ -25,6 +33,8 @@ The const char * argument is expected to be a pointer to an array of character t
 
 .IP %
 A '%' is written. No argument is converted. The complete conversion specification is '%%'.
+.SH CONFORMING TO
+The _printf function conform to C89 and C99.
 .SH EXAMPLE
 To print a string:
 .PP
