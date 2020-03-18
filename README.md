@@ -53,4 +53,5 @@ git clone https://github.com/emmanavarro/printf.git
 <img src="https://www.holbertonschool.com/holberton-logo.png"
      alt="Flow chart"
      style="float: left; margin-right: 10px;">
+
 Project for: [Holberton School](https://www.holbertonschool.com/)
