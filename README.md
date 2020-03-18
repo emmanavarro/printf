@@ -7,7 +7,7 @@ This project is about creating a simulation of the original printf function. The
 * Allowed editors: vi, vim, emacs
 * All your files will be compiled on Ubuntu 14.04 LTS
 * Your programs and functions will be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic
-* All your files should end with a new line.
+* All your files should end with a new line
 * You are not allowed to use global variables
 * No more than 5 functions per file
 * The prototypes of all your functions should be included in your header file called holberton.h
@@ -24,6 +24,7 @@ Specifier | Input example | Output example
 %s | "Printing a string: [%s]\n", "Hello, World" | Printing a string: [Hello, World]
 %d or %i | "Printing a number: [%i]\n", 386 | Printing a number: [386]
 %% | "Printing a percent sign: [%%]\n", % | Printing a percent sign: [%]
+
 *Note*: custom specifiers can be added as needed.
 
 * (...) the ellipsis sign represents the variable number of input arguments.
@@ -45,8 +46,11 @@ git clone https://github.com/emmanavarro/printf.git
  - [Secrets of printf](https://www.cypress.com/file/54761/download)
 
 ## Authors
-* Nathaly Sotomayor Ampudia | [Github] (https://github.com/nathsotomayor)
-* Emma Navarro Millán | [Github] (https://github.com/emmanavarro)
+* Nathaly Sotomayor Ampudia | [Github](https://github.com/nathsotomayor)
+* Emma Navarro Millán | [Github](https://github.com/emmanavarro)
 
 ## License
+<img src="https://www.holbertonschool.com/holberton-logo.png"
+     alt="Flow chart"
+     style="float: left; margin-right: 10px;">
 Project for: [Holberton School](https://www.holbertonschool.com/)
