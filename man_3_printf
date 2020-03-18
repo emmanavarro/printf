@@ -1,0 +1,61 @@
+.TH _PRINTF 3 "17 March 2020" "Hippokampoiers Cohort 11 1.0" "_printf man page"
+.SH NAME
+.B _printf
+- print data formatted.
+.SH SYNOPSIS
+#include "holberton.h"
+
+int printf(const char *format, ...);
+.SH DESCRIPTION
+Function that produces output according to a format. According to format, execute:
+.SH RETURN VALUE
+Upon successful return, these functions return the number of characters printed (excluding the null byte used to end output to strings).
+
+If an error occurs, return a negative value (-1).
+.SH CONVERSION SPECIFIER
+A character that specifies the type of conversion to be applied. The conversion specifiers and their meanings are:
+.IP d,i
+Decimal signed integer. The int argument is converted to signed decimal notation. 
+
+.IP c
+Character. The int argument is converted to an unsigned char, and the resulting character is written.
+
+.IP s
+The const char * argument is expected to be a pointer to an array of character type (pointer to a string). Characters from the array are written up to (but not including) a terminating null byte ('\0').
+
+.IP %
+A '%' is written. No argument is converted. The complete conversion specification is '%%'.
+.SH EXAMPLE
+To print a string:
+.PP
+.RS +4
+#include "holberton.h"
+
+.RE
+.RS +4
+/**
+ * main - function to use printf
+ * @void: void parameter
+ *
+ * Return: Length of the string
+ */
+int main(void)
+.RE
+.RS +4
+{
+.RE
+.RS +4
+    char *str = "Betty Holberton";
+.RE
+.RS +4
+    return (_printf("One of the first woman programmer: %s", str));
+.RE
+.RS +4
+}
+.DE
+.SH SEE ALSO
+.I printf(3)
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Emma Navarro Millán & Nathaly Sotomayor Ampudia
