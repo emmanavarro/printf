@@ -23,8 +23,9 @@ int _printf(const char *format, ...)
 	for (posit_fmt = 0; format[posit_fmt] && format; posit_fmt++)
 	{
 		if (format[posit_fmt] == '%')
-		{	
+		{
 			if (format[posit_fmt + 1] != '%')
+
 			{
 				g_fmt = get_format(format[posit_fmt + 1]);
 
@@ -53,5 +54,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(list);
-	return(len_fmt);
+	return (len_fmt);
 }
