@@ -3,7 +3,6 @@
 /**
  * print_string - Prints a string
  * @list: List of arguments
- * @buffer: Pointer to string
  *
  * Return: number of characters printed
  */
@@ -31,7 +30,6 @@ int print_string(va_list list)
 /**
  * print_char - Prints a character
  * @list: List of arguments
- * @buffer: Pointer to a character
  *
  * Return: number of chatacter printed
  */
@@ -46,9 +44,9 @@ int print_char(va_list list)
 }
 
 /**
- * print_char - Prints a character
- * @list: List of arguments
- * @buffer: Pointer to a character
+ * print_percent - Prints a percent
+ * @percent: List of arguments
+ * @buffer: Pointer to buffer
  *
  * Return: number of chatacter printed
  */
