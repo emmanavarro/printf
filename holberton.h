@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <unistd.h>
+#include <math.h>
 
 /**
  * struct printf_types - struct formats.
@@ -26,11 +27,14 @@ typedef struct print_format
 int print_string(va_list list);
 int print_char(va_list list);
 int print_percent(char *percent, char *buffer);
+int print_num(int i);
+int print_dec(va_list list);
 int (*get_format(char fmt))();
 
 /* Generic functions */
 
 int _putchar(char *c, int len_buffer);
+int _putc(char c);
 char *_strcat(char *dest, char *src);
 int _printf(const char *format, ...);
 void clear_buffer(char *buffer);

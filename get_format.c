@@ -13,6 +13,8 @@ int (*get_format(char fmt))()
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_percent},
+		{"i", print_num},
+		{"d", print_dec},
 		{NULL, NULL}
 	};
 

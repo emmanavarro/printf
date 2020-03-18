@@ -1,16 +1,14 @@
 #include "holberton.h"
 
 /**
- * _putchar - writes the character c to stdout
+ * _putc - writes the character c to stdout
  * @c: The character to print
- * @len_buffer: Size of the buffer
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: On success 1
  */
-int _putchar(char *c, int len_buffer)
+int _putc(char c)
 {
-	return (write(1, &c, len_buffer));
+	return (write(1, &c, 1));
 }
 
 /**
@@ -37,7 +35,7 @@ char *_strcat(char *dest, char *src)
 
 /**
  * clear_buffer - clear the buffer.
- * @buffer: pointer to the buffer to clear.
+ * @buff: pointer to the buffer to clear.
  *
  * Return: pointer to the buffer.
  */
@@ -54,7 +52,7 @@ void clear_buffer(char *buffer)
 
 /**
  * print_buffer - print the buffer.
- * @buffer: pointer to the buffer.
+ * @buff: pointer to the buffer.
  * @len: size of the buffer.
  */
 
