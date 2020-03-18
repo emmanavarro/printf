@@ -11,7 +11,7 @@
 
 /**
  * struct printf_types - struct formats.
- * 
+ *
  * @ftype: format.
  * @f: function associated.
  */

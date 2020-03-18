@@ -4,7 +4,7 @@
  * _putchar - writes the character c to stdout
  * @c: The character to print
  * @len_buffer: Size of the buffer
- * 
+ *
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
@@ -37,7 +37,7 @@ char *_strcat(char *dest, char *src)
 
 /**
  * clear_buffer - clear the buffer.
- * @buff: pointer to the buffer to clear.
+ * @buffer: pointer to the buffer to clear.
  *
  * Return: pointer to the buffer.
  */
@@ -54,7 +54,7 @@ void clear_buffer(char *buffer)
 
 /**
  * print_buffer - print the buffer.
- * @buff: pointer to the buffer.
+ * @buffer: pointer to the buffer.
  * @len: size of the buffer.
  */
 
@@ -67,7 +67,7 @@ void print_buffer(char *buffer, int len)
 /**
  * _strlen - Returns the length of a string
  * @s: string to count.
- * 
+ *
  * Return: Size of the string.
  */
 int _strlen(char *s)
