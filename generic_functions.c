@@ -35,7 +35,7 @@ char *_strcat(char *dest, char *src)
 
 /**
  * clear_buffer - clear the buffer.
- * @buff: pointer to the buffer to clear.
+ * @buffer: pointer to the buffer to clear.
  *
  * Return: pointer to the buffer.
  */
@@ -52,7 +52,7 @@ void clear_buffer(char *buffer)
 
 /**
  * print_buffer - print the buffer.
- * @buff: pointer to the buffer.
+ * @buffer: pointer to the buffer.
  * @len: size of the buffer.
  */
 
