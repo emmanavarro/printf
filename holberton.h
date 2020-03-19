@@ -8,7 +8,6 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <unistd.h>
-#include <math.h>
 
 /**
  * struct print_format - struct formats
@@ -28,7 +27,7 @@ typedef struct print_format
 int print_string(va_list list);
 int print_char(va_list list);
 int print_percent(char *percent, char *buffer);
-int print_num(int i);
+int print_num(va_list list);
 int print_dec(va_list list);
 int (*get_format(char fmt))();
 

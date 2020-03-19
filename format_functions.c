@@ -59,17 +59,18 @@ int print_percent(char *percent, char *buffer)
 
 /**
  * print_num - prints a number.
- * @i: number to print.
+ * @list: arguments to print.
  *
  * Return: counter.
  */
-int print_num(int i)
+int print_num(va_list list)
 {
-	int gt_num, j, k = 1, cont = 0;
+	int gt_num, j, n, k = 1, cont = 0;
 
-	gt_num = i;
+	n = va_arg(list, int);
+	gt_num = n;
 
-	if (i < 0)
+	if (n < 0)
 	{
 		k = k * -1;
 		_putc('-');
@@ -82,20 +83,20 @@ int print_num(int i)
 	}
 	while (k > 9 || k < -9)
 	{
-		j = (i / k) % 10;
+		j = (n / k) % 10;
 		_putc(j + '0');
 		k = k / 10;
 		cont++;
 
 	}
-	if (i < 0)
+	if (n < 0)
 	{
-		_putc((i % 10) * -1 + '0');
+		_putc((n % 10) * -1 + '0');
 		cont++;
 	}
 	else
 	{
-		_putc(i % 10 + '0');
+		_putc(n % 10 + '0');
 		cont++;
 	}
 	return (cont);
@@ -103,17 +104,13 @@ int print_num(int i)
 
 /**
   * print_dec - prints decimal numbers.
-  * @list: list of arguments to print.
+  * @list: arguments to print.
   *
   * Return: counter.
   */
 int print_dec(va_list list)
 {
-	int num, cont;
-
-	num = va_arg(list, int);
-
-	cont = print_num(num);
+	int cont = print_num(list);
 
 	return (cont);
 }
