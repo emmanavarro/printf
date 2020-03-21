@@ -1,4 +1,5 @@
-[![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![Bash Shell](https://badges.frapsoft.com/bash/v1/bash.png?v=103)](https://github.com/ellerbrock/open-source-badges/) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![GitHub contributors](https://img.shields.io/github/contributors/emmanavarro/printf.svg)](https://GitHub.com/emmanavarro/printf/graphs/contributors/)
+
 
 # _printf Function
 ## Creating our own C printf function
@@ -48,8 +49,8 @@ git clone https://github.com/emmanavarro/printf.git
  - [Secrets of printf](https://www.cypress.com/file/54761/download)
 
 ## :dancing_women: Authors
-* Nathaly Sotomayor Ampudia | [Github](https://github.com/nathsotomayor)
-* Emma Navarro Millán | [Github](https://github.com/emmanavarro)
+* [Nathaly Sotomayor Ampudia](https://github.com/nathsotomayor) ![Twitter Follow](https://img.shields.io/twitter/follow/nathsotomayor?label=%40nathsotomayor&style=social)
+* [Emma Navarro Millán](https://github.com/emmanavarro) ![Twitter Follow](https://img.shields.io/twitter/follow/Ayy_Emma?label=%40Ayy_Emma&style=social)
 
 ## Made with :heart: in
 <img src="https://www.holbertonschool.com/holberton-logo.png"
